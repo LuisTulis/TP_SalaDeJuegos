@@ -1,0 +1,31 @@
+
+<body>
+  <div class="top-buttons">
+    <button class="home-button" (click)="navigateToHome()">Volver al Home</button>
+    <span class="user-email">{{ this.usuarioActual.email }}</span>
+  </div>
+  <div class="chat-container">
+      <div class="chat">
+        <div *ngFor="let message of messages" class="message" [ngClass]="{'user-message': message.autor === this.usuarioActual.email, 'other-message': message.autor !== this.usuarioActual.email}">
+          <div class="message-content" [ngClass]="{'user-content': message.autor === this.usuarioActual.email, 'other-content': message.autor !== this.usuarioActual.email}">
+            <div class="message-sender" *ngIf="message.autor !== this.usuarioActual.email">
+              [{{ message.autor }}]
+            </div>
+            <div class="message-text">
+              {{ message.mensaje }}
+            </div>
+            <div class="message-time">
+            {{ message.timestamp.toDate() | date: 'dd/MM/yyyy HH:mm:ss' }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-container">
+          <input type="text" placeholder="Escribe tu mensaje..." [(ngModel)]="mensajeIngresado" />
+          <button (click)="subirMensaje()">Enviar</button>
+      </div>
+
+      <div class="esferas-container">
+       
+      </div>
+  </div>

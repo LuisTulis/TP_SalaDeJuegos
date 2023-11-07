@@ -1,0 +1,30 @@
+
+<body>
+    <div class="top-buttons">
+      <button class="home-button" (click)="irAlHome()">Volver al Home</button>
+      <span class="user-email">{{ this.usuarioActual.email }}</span>
+    </div>
+    <div class="encuestas-container">
+        <div class="encuestas">
+          <div *ngFor="let encuesta of encuestas" class="card">
+            <!-- Inicio de la tarjeta -->
+            <div class="card-header">
+              <h2>{{ encuesta.nombre }} || {{ encuesta.edad}} años</h2>
+            </div>
+            <div class="card-body">
+              <p *ngIf="encuesta.comentario != ''">—"{{ encuesta.comentario }}"</p>
+              <p>Juego favorito: {{ encuesta.juegoFavorito }}</p>
+              <p>Telefono: {{ encuesta.telefono }}</p>
+              <p>Está satisfecho con la pagina: {{ encuesta.satisfaccion }}</p>
+              <!-- Otros campos de la encuesta -->
+            </div>
+            <div class="card-footer">
+              <h2>{{encuesta.mail}}</h2>
+            </div>
+            <!-- Fin de la tarjeta -->
+          </div>
+  
+        <div class="esferas-container">
+         
+        </div>
+    </div>

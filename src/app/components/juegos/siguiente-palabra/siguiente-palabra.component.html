@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="siguiente-palabra.component.css">
+    <title>Juego de Palabras</title>
+</head>
+<body>
+    <div class="header">
+        <button (click)="irAlHome()" class="home-button">Volver al Home</button>
+        <span class="account-name">{{ this.usuarioActual.email }}</span>
+        <button (click)="irAlChat()" class="chat-button">Ir al Chat</button>
+    </div>
+    <div class="container">
+        <h1>Juego de Palabras</h1>
+        <button (click)="comenzarJuego()" class="start-button" *ngIf="!juegoIniciado">Comenzar</button>
+        <div class="game-container" *ngIf="juegoIniciado">
+        <p>Palabra anterior: <span>{{ palabraAnterior }}</span></p>
+        <div class="word-display">{{ palabraEscrita.join('') }}</div>
+        <div class="letter-buttons">
+            <button *ngFor="let letter of alphabet" (click)="agregarLetra(letter)">{{ letter }}</button>
+        </div>
+        <button (click)="borrar()" [disabled]="!palabraEscrita.length">BORRAR</button>
+        <button (click)="enviarPalabra()" [disabled]="!palabraEscrita.length">ENVIAR</button>
+        <p>Tiempo restante: {{10 - this.segundos}}</p>
+      </div>
+    </div>
+</body>
+</html>

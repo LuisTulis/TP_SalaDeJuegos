@@ -1,0 +1,28 @@
+<body>
+  <div class="header">
+      <button (click)="irAlHome()" class="home-button">Volver al Home</button>
+      <span class="account-name">{{ this.usuarioActual.email }}</span>
+      <button (click)="irAlChat()" class="chat-button">Ir al Chat</button>
+  </div>
+  <div class="container">
+      <h1>Juego del Ahorcado</h1>
+      <button (click)="comenzarJuego()" class="start-button" *ngIf="!juegoIniciado">Comenzar</button>
+      <div class="game-box" *ngIf="this.juegoIniciado"> <!-- Nuevo contenedor para los elementos del juego -->
+          <div class="word">
+              <!-- Mostrar letras adivinadas -->
+              <span *ngFor="let letter of guessedWord">{{ letter }}</span>
+          </div>
+          <div class="buttons">
+              <!-- Botones para adivinar letras -->
+              <button *ngFor="let letter of alphabet" (click)="guessLetter(letter)" [disabled]="usedLetters.includes(letter)">
+                  {{ letter }}
+              </button>
+          </div>
+          <div class="hangman">
+              <!-- Mostrar el dibujo del ahorcado -->
+              <img [src]='pathFoto'>
+          </div>
+          <h1>Racha : {{this.points}}</h1>
+      </div>
+  </div>
+</body>

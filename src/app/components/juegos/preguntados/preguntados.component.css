@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7335B7;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.home-button, .chat-button {
+  background-color: #B265DD;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 600px;
+  width: 600px;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #944BCB;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.question-container {
+  background-color: #B265DD;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 10px 0;
+  background-color: #B265DD;
+  border: 1px solid #B265DD;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer; /* Agregamos cursor pointer aquí */
+}
+
+.option-text {
+  flex: 1; /* Esto hace que el texto ocupe todo el espacio disponible */
+}
+
+.option-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #944BCB;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center; /* Centra el texto horizontalmente */
+  transition: background-color 0.3s;
+}
+
+.option-button:hover {
+  background-color: #7335B7;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #B265DD;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #944BCB;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.home-button, .chat-button {
+  background-color: #B265DD;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.home-button:hover, .chat-button:hover {
+  background-color: #944BCB;
+}
+
+.start-button {
+  background-color: #B265DD;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0; /* Agrega espacio entre el botón "Comenzar" y otros elementos */
+  width: auto;
+}
+
+.start-button:hover {
+  background-color: #7335B7; /* Cambia el color de fondo en el hover */
+}

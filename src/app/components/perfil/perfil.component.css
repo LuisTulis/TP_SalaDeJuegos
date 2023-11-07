@@ -1,0 +1,55 @@
+/* Estilo para etiquetas y campos de entrada */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin-top: 10vh;
+}
+
+/* Contenedor del formulario de perfil */
+.profile-container {
+    background-color: #A365A9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+}
+
+/* Estilo para campos de entrada */
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #C37DB0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #C37DB0;
+}
+
+/* Estilo para el botón de guardar */
+.form-group button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #DB9BB8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #C37DB0;
+}
+

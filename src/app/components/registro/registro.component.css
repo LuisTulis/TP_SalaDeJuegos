@@ -1,0 +1,175 @@
+
+
+/* Estilo para etiquetas y campos de entrada */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+
+/* Contenedor para centrar el formulario verticalmente */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* Redujimos la altura del contenedor */
+    margin-top: 20vh; /* Ajustamos la posición vertical del formulario */
+}
+
+/* Estilo para el formulario de inicio de sesión */
+.login-form {
+    background-color: #944BCB ;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #B265DD;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #B265DD;
+}
+
+/* Estilo para el botón de inicio de sesión */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #C984F2 ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #DBA5FF ;
+}
+
+/* Estilo para el div que contiene el texto "¿No tienes una cuenta?" y el botón "Crear una cuenta" */
+.create-account {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.create-account p {
+    margin-bottom: 10px;
+}
+
+.create-account button {
+    background-color: #DBA5FF ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-account button:hover {
+    background-color: #DBA5FF ;
+}
+
+/* Estilo para las esferas decorativas */
+.esfera {
+    position: fixed;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Estilo para esfera1 */
+.esfera1 {
+    background-color: #C984F2 ; /* Color de las esferas */
+    width: 400px;
+    height: 300px;
+    top: -20%;
+    left: 10%;
+}
+
+/* Estilo para esfera2 */
+.esfera2 {
+    background-color: #DBA5FF ; /* Color de las esferas */
+    width: 600px;
+    height: 600px;
+    top: 15%;
+    left: 90%;
+}
+
+/* Estilo para esfera3 */
+.esfera3 {
+    background-color: #DBA5FF ; /* Color de las esferas */
+    width: 400px;
+    height: 400px;
+    top: 70%;
+    left: 30%;
+}
+
+.esfera4 {
+    background-color: #C984F2 ; /* Color de las esferas */
+    width: 200px;
+    height: 200px;
+    top: 40%;
+    left: 70%;
+}
+
+.esfera5 {
+    background-color: #B265DD ; /* Color de las esferas */
+    width: 120px;
+    height: 120px;
+    top: 5%;
+    left: 50%;
+}
+
+.esfera6 {
+    background-color: #B265DD ; /* Color de las esferas */
+    width: 600px;
+    height: 600px;
+    top: 30%;
+    left: -10%;
+}
+
+/* Puedes agregar más esferas según tus preferencias */
+
+/* Estilo para el body para evitar el scroll */
+.esferas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el contenedor de las esferas detrás del contenido principal */
+    overflow: hidden; /* Evita que aparezca el scroll en el contenedor de las esferas */
+    background-color: #7335B7;
+}
+
+
+.error-message {
+    background-color: #FF6B6B; /* Color de fondo para el mensaje de error */
+    color: #fff; /* Color de texto del mensaje de error */
+    padding: 10px; /* Espaciado interno del mensaje de error */
+    border-radius: 5px; /* Borde redondeado */
+    text-align: center; /* Alineación de texto centrada */
+    margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical */
+    max-width: 300px; /* Ancho máximo del mensaje de error */
+}
+
+/* Estilo para el mensaje de éxito */
+.success-message {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: #fff; /* Color de texto del mensaje de éxito */
+    padding: 10px; /* Espaciado interno del mensaje de éxito */
+    border-radius: 5px; /* Borde redondeado */
+    text-align: center; /* Alineación de texto centrada */
+    margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical */
+    max-width: 300px; /* Ancho máximo del mensaje de éxito */
+}

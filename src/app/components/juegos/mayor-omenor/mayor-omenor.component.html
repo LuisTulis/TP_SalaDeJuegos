@@ -1,0 +1,26 @@
+
+<body>
+    <div class="header">
+        <button (click)="irAlHome()" class="home-button">Volver al Home</button>
+        <span class="account-name">{{ this.usuarioActual.email }}</span>
+        <button (click)="irAlChat()" class="chat-button">Ir al Chat</button>
+    </div>
+    <div class="container">
+        <h1>Juego de Cartas</h1>
+        <button (click)="comenzarJuego()" class="start-button" *ngIf="!juegoIniciado">Comenzar</button>
+        <div class="card-container" *ngIf="juegoIniciado">
+            <div class="card">
+                <p>Carta Actual</p>
+                <img src="{{pathImage}}" alt="Carta Actual">
+            <p class="prediction-text">La siguiente carta tendrá un valor...</p>
+            <div class="guess-buttons">
+                <div class="button-container">
+                    <button (click)="esMayor()" id="higher-button">Mayor</button>
+                    <button (click)="esMenor()" id="lower-button">Menor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <p id="result-message"></p>
+    </div>
+</body>

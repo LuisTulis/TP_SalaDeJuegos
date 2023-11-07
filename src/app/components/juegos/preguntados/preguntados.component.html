@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preguntados.component.css">
+    <title>Preguntados</title>
+</head>
+<body>
+    <div class="header">
+        <button (click)="irAlHome()" class="home-button">Volver al Home</button>
+        <span class="account-name">{{ this.usuarioActual.email }}</span>
+        <button (click)="irAlChat()" class="chat-button">Ir al Chat</button>
+    </div>
+    <div class="container">
+        <h1>Preguntas</h1>
+        <button (click)="comenzarJuego()" class="start-button" *ngIf="!juegoIniciado">Comenzar</button>
+        <div class="question-container"  *ngIf="juegoIniciado">
+            <p>{{ question.question }}</p>
+            <ul>
+                <li *ngFor="let option of options">
+                    <button class="option-button" (click)="checkAnswer(option)">{{ option }}</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

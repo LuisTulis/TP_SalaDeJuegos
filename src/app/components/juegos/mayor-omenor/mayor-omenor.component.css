@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7335B7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .home-button, .chat-button {
+    background-color: #B265DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #944BCB;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: #B265DD;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+.guess-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #B265DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #944BCB;
+}
+
+#result-message {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .home-button, .chat-button {
+    background-color: #B265DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+.home-button:hover,
+.chat-button:hover {
+    background-color: #944BCB; /* Cambia el color de fondo en el hover */
+}
+
+/* Estilos para la frase */
+.prediction-text {
+    font-size: 16px; /* Tamaño de fuente deseado */
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los botones */
+}
